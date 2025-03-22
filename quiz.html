@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">1. What is the capital of France?<br>
+                <input type="radio" name="q1" value="Paris"> Paris
+                <input type="radio" name="q1" value="London"> London
+                <input type="radio" name="q1" value="Berlin"> Berlin
+            </div>
+            <div class="question">2. Who developed the theory of relativity?<br>
+                <input type="radio" name="q2" value="Newton"> Newton
+                <input type="radio" name="q2" value="Einstein"> Einstein
+                <input type="radio" name="q2" value="Galileo"> Galileo
+            </div>
+            <div class="question">3. What is the largest planet in our solar system?<br>
+                <input type="radio" name="q3" value="Earth"> Earth
+                <input type="radio" name="q3" value="Jupiter"> Jupiter
+                <input type="radio" name="q3" value="Saturn"> Saturn
+            </div>
+            <div class="question">4. Who painted the Mona Lisa?<br>
+                <input type="radio" name="q4" value="Van Gogh"> Van Gogh
+                <input type="radio" name="q4" value="Picasso"> Picasso
+                <input type="radio" name="q4" value="Da Vinci"> Da Vinci
+            </div>
+            <div class="question">5. What is the chemical symbol for water?<br>
+                <input type="radio" name="q5" value="H2O"> H2O
+                <input type="radio" name="q5" value="O2"> O2
+                <input type="radio" name="q5" value="CO2"> CO2
+            </div>
+            <div class="question">6. What is the capital of Japan?<br>
+                <input type="radio" name="q6" value="Tokyo"> Tokyo
+                <input type="radio" name="q6" value="Seoul"> Seoul
+                <input type="radio" name="q6" value="Beijing"> Beijing
+            </div>
+            <div class="question">7. How many continents are there on Earth?<br>
+                <input type="radio" name="q7" value="5"> 5
+                <input type="radio" name="q7" value="6"> 6
+                <input type="radio" name="q7" value="7"> 7
+            </div>
+            <div class="question">8. What is the square root of 64?<br>
+                <input type="radio" name="q8" value="6"> 6
+                <input type="radio" name="q8" value="8"> 8
+                <input type="radio" name="q8" value="10"> 10
+            </div>
+            <div class="question">9. What is the main gas found in Earth's atmosphere?<br>
+                <input type="radio" name="q9" value="Oxygen"> Oxygen
+                <input type="radio" name="q9" value="Nitrogen"> Nitrogen
+                <input type="radio" name="q9" value="Carbon Dioxide"> Carbon Dioxide
+            </div>
+            <div class="question">10. What is the national currency of the USA?<br>
+                <input type="radio" name="q10" value="Dollar"> Dollar
+                <input type="radio" name="q10" value="Euro"> Euro
+                <input type="radio" name="q10" value="Pound"> Pound
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="result" style="display: none;">Your score: <span id="score"></span><br>
+            Correct: <span id="correct"></span> | Wrong: <span id="wrong"></span>
+        </div>
+    </div>
+
+   <script src="quiz.js"></script>
+</body>
+</html>
